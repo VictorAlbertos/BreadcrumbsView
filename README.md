@@ -26,7 +26,7 @@ dependencies {
 ## Usage
 
 ### XML inflation
-Define a BreadcrumbsView in xml layout as follows:
+Define a `BreadcrumbsView` in xml layout as follows:
 
 ```xml
   <io.victoralbertos.breadcumbs_view.BreadcrumbsView
@@ -54,4 +54,4 @@ Once instantiated the instance of `BreadcrumbsView`, use `breadcrumbs.nextStep()
 In order to retain the current step between config changes, use `breadcrumbs.setCurrentStep(int)`. You must call it before the view is measured. Otherwise, it throws an `IllegalStateException`.
 
 ### Examples
-The module [test-sample]("https://github.com/VictorAlbertos/BreadcrumbsView/tree/master/test-sample") contains both a minimal example and a UI test driven by Espresso.
+The module [test-sample](https://github.com/VictorAlbertos/BreadcrumbsView/tree/master/test-sample) contains both a minimal example and a UI test driven by Espresso.
