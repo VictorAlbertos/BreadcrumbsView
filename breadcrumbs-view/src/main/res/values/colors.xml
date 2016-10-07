@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="def_visited_step_border_dot_color">#00796B</color>
+  <color name="def_visited_step_fill_dot_color">#00796B</color>
+  <color name="def_next_step_border_dot_color">#30009688</color>
+  <color name="def_next_step_fill_dot_color">#00FFFFFF</color>
+  <color name="def_visited_step_separator_color">#00796B</color>
+  <color name="def_next_step_separator_color">#30009688</color>
+</resources>

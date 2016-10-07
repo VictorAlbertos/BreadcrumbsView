@@ -1,0 +1,14 @@
+<resources>
+  <declare-styleable name="BreadcrumbsView">
+    <attr name="numberOfSteps" format="integer" />
+    <attr name="visitedStepBorderDotColor" format="color" />
+    <attr name="visitedStepFillDotColor" format="color" />
+    <attr name="nextStepBorderDotColor" format="color" />
+    <attr name="nextStepFillDotColor" format="color" />
+    <attr name="visitedStepSeparatorColor" format="color" />
+    <attr name="nextStepSeparatorColor" format="color" />
+    <attr name="radiusDot" format="dimension" />
+    <attr name="sizeDotBorder" format="dimension" />
+    <attr name="heightSeparator" format="dimension" />
+  </declare-styleable>
+</resources>

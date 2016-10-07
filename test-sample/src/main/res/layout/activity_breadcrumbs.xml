@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".BreadcrumbsActivity">
+
+  <io.victoralbertos.breadcumbs_view.BreadcrumbsView
+      android:id="@+id/breadcrumbs"
+      android:layout_alignParentTop="true"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:numberOfSteps="5"
+      app:visitedStepBorderDotColor="@color/colorVisited"
+      app:visitedStepFillDotColor="@color/colorVisited"
+      app:nextStepBorderDotColor="@color/colorNext"
+      app:nextStepFillDotColor="@color/colorNext"
+      app:visitedStepSeparatorColor="@color/colorVisited"
+      app:nextStepSeparatorColor="@color/colorNext"
+      app:radiusDot="@dimen/radius_dot"
+      app:sizeDotBorder="@dimen/size_dot_border"
+      app:heightSeparator="@dimen/height_separator"/>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:weightSum="2"
+      android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/bt_prev"
+        android:text="@string/prev"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textColor="@color/colorWhite"
+        android:backgroundTint="@color/colorVisited"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/bt_next"
+        android:text="@string/next"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textColor="@color/colorWhite"
+        android:backgroundTint="@color/colorVisited"
+        android:layout_height="wrap_content"/>
+
+  </LinearLayout>
+
+
+</RelativeLayout>

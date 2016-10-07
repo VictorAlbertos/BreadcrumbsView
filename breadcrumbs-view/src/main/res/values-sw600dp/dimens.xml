@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="def_size_dot_border">2dp</dimen>
+  <dimen name="def_height_separator">2dp</dimen>
+  <dimen name="def_radius_dot">8dp</dimen>
+</resources>

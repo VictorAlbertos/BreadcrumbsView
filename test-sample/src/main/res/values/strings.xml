@@ -1,0 +1,5 @@
+<resources>
+  <string name="app_name">BreadcumbsView</string>
+  <string name="next">NEXT</string>
+  <string name="prev">PREV</string>
+</resources>
