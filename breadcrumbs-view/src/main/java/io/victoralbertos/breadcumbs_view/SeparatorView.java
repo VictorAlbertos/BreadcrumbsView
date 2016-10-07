@@ -16,11 +16,13 @@
 
 package io.victoralbertos.breadcumbs_view;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.drawable.GradientDrawable;
 import android.view.View;
 import android.widget.RelativeLayout;
 
+@SuppressLint("ViewConstructor")
 final class SeparatorView extends RelativeLayout {
   private final View separatorViewVisitedStep;
 
