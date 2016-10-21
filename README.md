@@ -1,5 +1,7 @@
 # BreadcrumbsView
 
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-BreadcrumbsView-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/4475)
+
 A customizable Android view which shows the current step of a given series. Its main purpose is to provide a contextual reference for paginated forms.
 
 ![Screenshots](breadcrumbs.gif)
