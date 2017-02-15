@@ -21,7 +21,7 @@ allprojects {
 Add to app module *gradle.build* file
 ```gradle
 dependencies {
-    compile 'com.github.VictorAlbertos:BreadcrumbsView:0.0.2'
+    compile 'com.github.VictorAlbertos:BreadcrumbsView:0.0.3'
 }
 ```
 
