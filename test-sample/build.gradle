@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-  compileSdkVersion 24
-  buildToolsVersion "24.0.1"
+  compileSdkVersion 25
+  buildToolsVersion "25.0.0"
 
   defaultConfig {
     applicationId "io.victoralbertos.breadcumbsview"
     minSdkVersion 18
-    targetSdkVersion 24
+    targetSdkVersion 25
     versionCode 1
     versionName "1.0"
     testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -26,12 +26,12 @@ android {
 
 dependencies {
   compile project(':breadcrumbs-view')
-  compile 'com.android.support:appcompat-v7:24.2.1'
+  compile 'com.android.support:appcompat-v7:25.1.1'
 
   testCompile 'junit:junit:4.12'
   androidTestCompile 'com.android.support.test:runner:0.5'
   androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.2'
-  androidTestCompile 'com.android.support.test.uiautomator:uiautomator-v18:2.1.1'
+  androidTestCompile 'com.android.support.test.uiautomator:uiautomator-v18:2.1.2'
 }
 
 configurations.all {
