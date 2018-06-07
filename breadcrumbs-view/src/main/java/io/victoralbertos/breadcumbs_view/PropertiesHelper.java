@@ -55,6 +55,11 @@ final class PropertiesHelper {
             "You must set a number of steps. Use 'numberOfSteps' attribute to supply a value greater than 1");
       }
 
+      breadcrumbsView.dotDrawable =
+              a.getDrawable(R.styleable.BreadcrumbsView_dotDrawable);
+      breadcrumbsView.dotVisitedDrawable =
+              a.getDrawable(R.styleable.BreadcrumbsView_dotVisitedDrawable);
+
       breadcrumbsView.visitedStepBorderDotColor =
           a.getColor(R.styleable.BreadcrumbsView_visitedStepBorderDotColor,
               ContextCompat.getColor(breadcrumbsView.getContext(),

@@ -10,5 +10,7 @@
     <attr name="radiusDot" format="dimension" />
     <attr name="sizeDotBorder" format="dimension" />
     <attr name="heightSeparator" format="dimension" />
+    <attr name="dotDrawable" format="reference"/>
+    <attr name="dotVisitedDrawable" format="reference"/>
   </declare-styleable>
 </resources>

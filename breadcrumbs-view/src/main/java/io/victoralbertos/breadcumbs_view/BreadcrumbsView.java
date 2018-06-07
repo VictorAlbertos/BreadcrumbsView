@@ -17,6 +17,7 @@
 package io.victoralbertos.breadcumbs_view;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.view.ViewTreeObserver;
 import android.widget.LinearLayout;
@@ -24,6 +25,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BreadcrumbsView extends LinearLayout {
+  Drawable dotDrawable;
+  Drawable dotVisitedDrawable;
   int visitedStepBorderDotColor;
   int visitedStepFillDotColor;
   int nextStepBorderDotColor;
@@ -163,7 +166,7 @@ public class BreadcrumbsView extends LinearLayout {
           new DotView(getContext(), visited, visitedStepBorderDotColor,
               visitedStepFillDotColor,
               nextStepBorderDotColor, nextStepFillDotColor, radius,
-              sizeDotBorder);
+              sizeDotBorder, dotDrawable, dotVisitedDrawable);
       addView(dotView);
 
       //Prevent drawing a separator after the last dot.

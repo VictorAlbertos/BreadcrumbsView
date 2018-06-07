@@ -18,6 +18,7 @@ package io.victoralbertos.breadcumbs_view;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -29,15 +30,22 @@ final class DotView extends RelativeLayout {
 
   DotView(Context context, boolean visited, int visitedStepBorderDotColor,
       int visitedStepFillDotColor, int nextStepBorderDotColor,
-      int nextStepFillDotColor, int radius, int sizeBorderLine) {
+      int nextStepFillDotColor, int radius, int sizeBorderLine,
+          Drawable dotDrawale, Drawable dotVisitedDrawable) {
     super(context);
 
     setLayoutParams(new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT));
 
-    addView(createDot(nextStepBorderDotColor, nextStepFillDotColor, radius, sizeBorderLine));
+    if(dotDrawale == null)
+      addView(createDot(nextStepBorderDotColor, nextStepFillDotColor, radius, sizeBorderLine));
+    else
+      addView(createDot(radius, dotDrawale));
 
-    dotViewVisitedStep =
+    if(dotVisitedDrawable == null)
+      dotViewVisitedStep =
         createDot(visitedStepBorderDotColor, visitedStepFillDotColor, radius, sizeBorderLine);
+    else
+      dotViewVisitedStep = createDot(radius, dotVisitedDrawable);
 
     if (!visited) {
       dotViewVisitedStep.setScaleX(0);
@@ -59,9 +67,14 @@ final class DotView extends RelativeLayout {
     border.setShape(GradientDrawable.OVAL);
     border.setColor(fillColor);
     border.setStroke(sizeBorderLine, borderColor);
-
     dotView.setBackground(border);
+    return dotView;
+  }
 
+  private View createDot(int radius, Drawable dotDrawable){
+    View dotView = new View(getContext());
+    dotView.setLayoutParams(new LinearLayout.LayoutParams(radius * 2, radius * 2));
+    dotView.setBackground(dotDrawable);
     return dotView;
   }
 

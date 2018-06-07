@@ -22,9 +22,11 @@
       app:visitedStepFillDotColor="@color/colorVisited"
       app:nextStepBorderDotColor="@color/colorNext"
       app:nextStepFillDotColor="@color/colorNext"
-      app:visitedStepSeparatorColor="@color/colorVisited"
+      app:visitedStepSeparatorColor="@android:color/holo_green_dark"
       app:nextStepSeparatorColor="@color/colorNext"
       app:radiusDot="@dimen/radius_dot"
+      app:dotDrawable="@drawable/rejected"
+      app:dotVisitedDrawable="@drawable/approved"
       app:sizeDotBorder="@dimen/size_dot_border"
       app:heightSeparator="@dimen/height_separator"/>
 
