@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-  compileSdkVersion 25
-  buildToolsVersion "25.0.0"
+  compileSdkVersion 29
+  buildToolsVersion "30.0.0"
 
   defaultConfig {
     applicationId "io.victoralbertos.breadcumbsview"
     minSdkVersion 18
-    targetSdkVersion 25
+    targetSdkVersion 29
     versionCode 1
     versionName "1.0"
     testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
